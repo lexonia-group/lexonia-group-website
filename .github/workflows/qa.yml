@@ -1,0 +1,17 @@
+name: qa
+# Agency Playbook SOP 02 — QA Before Deploy. Runs on every pull request and on main.
+# Make this a required status check on main so nothing merges (and Netlify deploys nothing) when it fails.
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run QA gate
+        run: node scripts/qa.js
