@@ -39,5 +39,6 @@
     <priority>0.6</priority>
   </url>
   <url><loc>https://lexoniagroup.com/blog/meta-ad-budget</loc><lastmod>2026-05-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://lexoniagroup.com/privacy</loc><lastmod>2026-09-15</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lexoniagroup.com/privacy</loc><lastmod>2026-09-25</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lexoniagroup.com/terms</loc><lastmod>2026-09-25</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
