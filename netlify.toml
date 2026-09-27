@@ -5,6 +5,12 @@
 [build]
   publish = "."
 
+# Staging (branch deploys, e.g. staging--<site>.netlify.app): keep search engines out. Production is untouched.
+[context.branch-deploy]
+  command = "printf "User-agent: *
+Disallow: /
+" > robots.txt"
+
 # ── Facebook crawler files (Agency Playbook LP SOP Phase 7) ─────────────────
 # Netlify strips dotfolders, so the ucp file lives at the root and /.well-known/ucp is served from it.
 [[redirects]]
