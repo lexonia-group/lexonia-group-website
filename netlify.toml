@@ -9,6 +9,9 @@
 [context.branch-deploy]
   command = "echo 'User-agent: *' > robots.txt && echo 'Disallow: /' >> robots.txt"
 
+[context.deploy-preview]
+  command = "echo 'User-agent: *' > robots.txt && echo 'Disallow: /' >> robots.txt"
+
 # ── Facebook crawler files (Agency Playbook LP SOP Phase 7) ─────────────────
 # Netlify strips dotfolders, so the ucp file lives at the root and /.well-known/ucp is served from it.
 [[redirects]]
