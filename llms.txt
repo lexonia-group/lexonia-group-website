@@ -18,7 +18,7 @@ This file lists the pages that describe the business. It follows the site as pub
 ## Profiles
 - Facebook: https://www.facebook.com/profile.php?id=61583797644829
 - Instagram: https://www.instagram.com/lexoniagroup
-- LinkedIn: https://www.linkedin.com/company/117074602
+- LinkedIn: https://www.linkedin.com/company/lexoniagroup
 
 ## Contact
 - Email: info@lexoniagroup.com
