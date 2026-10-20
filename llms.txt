@@ -10,6 +10,7 @@ This file lists the pages that describe the business. It follows the site as pub
 - [Contact](https://lexoniagroup.com/contact): book a free call.
 
 ## Blog
+- [Can AI Write My Business’s Social Media Posts Without Embarrassing Me?](https://lexoniagroup.com/blog/ai-social-media-posts): Yes, if every post is checked against your own facts before it can go out and nothing is published without your yes. The four fears owners have, what stops each one, and what Google and Meta say about AI content.
 - [Why Does a Small Business’s Social Media Go Quiet When the Owner Gets Busy?](https://lexoniagroup.com/blog/social-media-goes-quiet): Because every post, reply and follow-up waits for one person. What can move to a system you approve from your phone, what should stay with the owner, and a five-minute checklist to start.
 - [What Should Be My Monthly Meta Ad Budget?](https://lexoniagroup.com/blog/meta-ad-budget): The question most local businesses ask — and the question they should be asking instead. A practical look at Meta ad budgets, daily spend, and why lifetime value changes everything.
 - [Building Social Trust: How Local Businesses Turn Followers Into Customers](https://lexoniagroup.com/blog/social-trust): Most businesses focus only on getting the booking. But trust is built long before someone reaches out. Here's the 6-stage Trust Ladder every local business needs to understand.
