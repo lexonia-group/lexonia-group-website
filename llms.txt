@@ -8,6 +8,7 @@ This file lists the pages that describe the business. It follows the site as pub
 - [Services](https://lexoniagroup.com/services): positioning and strategy, social media marketing, social media lead generation, and AI automation.
 - [About](https://lexoniagroup.com/about): who we are and how we work.
 - [Contact](https://lexoniagroup.com/contact): book a free call.
+- [Apps for AI assistants](https://lexoniagroup.com/apps): Lexonia’s apps on Apify for Claude, ChatGPT and AI agents: Video Lens (any video as text, translation and subtitles), Audience Intel (the creators an audience watches, with contacts), Business Finder, Lexonia Search for YouTube, Contact Details Scraper.
 
 ## Blog
 - [Why Does a Small Business’s Social Media Go Quiet When the Owner Gets Busy?](https://lexoniagroup.com/blog/social-media-goes-quiet): Because every post, reply and follow-up waits for one person. What can move to a system you approve from your phone, what should stay with the owner, and a five-minute checklist to start.

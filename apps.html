@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://lexoniagroup.com/apps" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps for AI Assistants: Video Transcripts, Creator Contacts</title>
+  <meta name="description" content="Transcripts and translations of any video, the creators an audience watches, and local business lists. Apps for Claude, ChatGPT and AI agents, by Lexonia Group." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lexoniagroup.com/apps" />
+  <meta property="og:title" content="Apps for AI Assistants: Video Transcripts, Creator Contacts" />
+  <meta property="og:description" content="Transcripts and translations of any video, the creators an audience watches, and local business lists. Apps for Claude, ChatGPT and AI agents, by Lexonia Group." />
+  <meta property="og:image" content="https://lexoniagroup.com/images/og-apps.jpg" />
+  <meta property="og:site_name" content="Lexonia Group" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apps for AI Assistants: Video Transcripts, Creator Contacts" />
+  <meta name="twitter:description" content="Transcripts and translations of any video, the creators an audience watches, and local business lists. Apps for Claude, ChatGPT and AI agents, by Lexonia Group." />
+  <meta name="twitter:image" content="https://lexoniagroup.com/images/og-apps.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .page-hero .hero-sub { max-width: 760px; margin: 20px auto 0; font-size: 18px; line-height: 1.7; color: var(--sub); }
+    .page-hero .hero-note { max-width: 760px; margin: 14px auto 0; font-size: 14px; color: var(--muted); }
+    .app-block h2 { max-width: 900px; }
+    .app-lead { font-size: 17px; line-height: 1.75; color: var(--sub); max-width: 820px; margin-top: 16px; }
+    .app-zh { font-size: 15px; line-height: 1.8; color: var(--sub); max-width: 820px; margin-top: 12px; }
+    .app-label { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--navy); margin: 36px 0 12px; }
+    .app-cols { display: grid; grid-template-columns: 1fr 1.25fr; gap: 48px; align-items: start; }
+    .uc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .uc-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--r); padding: 18px 20px; }
+    .section-alt .uc-card { background: var(--white); }
+    .uc-who { font-weight: 700; color: var(--text); font-size: 15px; margin-bottom: 8px; }
+    .uc-job, .uc-got { font-size: 14px; line-height: 1.6; color: var(--sub); margin-bottom: 6px; }
+    .uc-job span, .uc-got span { color: var(--navy); font-weight: 600; }
+    .app-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+    .app-editions { font-size: 14px; margin-top: 14px; }
+    .app-editions a, .app-legal a { color: var(--navy); }
+    .app-faq { margin-top: 48px; max-width: 820px; }
+    .app-faq h3 { font-size: 18px; margin: 24px 0 8px; }
+    .app-faq p { color: var(--sub); line-height: 1.7; }
+    .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+    .app-card h2 { font-size: 22px; margin-bottom: 10px; }
+    .app-card .suffix { font-size: 15px; font-weight: 500; color: var(--sub); }
+    .app-promise { font-weight: 600; color: var(--text); margin-bottom: 12px; }
+    .app-card .app-label { margin-top: 20px; }
+    .app-legal { font-size: 12px; color: var(--muted); margin-top: 16px; line-height: 1.6; }
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .how-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--r); padding: 28px; }
+    .how-card h3 { font-size: 18px; margin-bottom: 12px; }
+    .how-card p, .how-card li { font-size: 15px; line-height: 1.7; color: var(--sub); }
+    .how-card ol { padding-left: 20px; margin: 8px 0; }
+    .how-card code { background: var(--gray-light); padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    .how-card .example { background: var(--blue-pale); border-radius: var(--rs); padding: 12px 14px; margin-top: 12px; font-size: 14px; color: var(--text); }
+    .faq-list { max-width: 820px; margin: 0 auto; }
+    .faq-list h3 { font-size: 18px; margin: 24px 0 8px; }
+    .faq-list p { color: var(--sub); line-height: 1.7; }
+    .trust p { max-width: 820px; margin: 0 auto 16px; color: var(--sub); line-height: 1.75; }
+    .trust a { color: var(--navy); }
+    .video-slot:empty { display: none; }
+    @media (max-width: 768px) {
+      .app-cols, .uc-grid, .apps-grid, .how-grid { grid-template-columns: 1fr !important; }
+      .app-cols { gap: 24px; }
+    }
+  </style>
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init","1466460141530283");fbq("track","PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1466460141530283&ev=PageView&noscript=1"/></noscript>
+  <!-- Microsoft Clarity -->
+  <script>
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}
+    )(window,document,"clarity","script","w4if5scy0w");
+  </script>
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Lexonia Group",
+    "description": "Lexonia Group helps local service businesses in the US and Canada with social media marketing, lead generation and AI automation, managed for you or automated.",
+    "url": "https://lexoniagroup.com",
+    "telephone": "(952) 836-8405",
+    "email": "info@lexoniagroup.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Eden Prairie",
+      "addressRegion": "MN",
+      "addressCountry": "US"
+    },
+    "areaServed": ["United States", "Canada"],
+    "sameAs": [
+      "https://www.instagram.com/lexoniagroup",
+      "https://www.facebook.com/profile.php?id=61583797644829",
+      "https://www.linkedin.com/company/lexoniagroup"
+    ]
+  }
+  </script>
+  <!-- Schema.org: one SoftwareApplication per app, no offers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Video Lens",
+    "description": "Turns any public video into text: the transcript in its own language, a translation into more than 30 languages, a summary, and SRT and VTT subtitles with timestamps. Sources: YouTube, TikTok, Instagram and Facebook Reels, Bilibili, Douyin and Vimeo. Transcribes speech when a video has no captions.",
+    "url": "https://apify.com/lexonia/lexonia-video-scrape",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lexonia Group LLC",
+      "url": "https://lexoniagroup.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Audience Intel",
+    "description": "Describe an audience in plain words and get the creators that audience watches on YouTube, TikTok, Bilibili and Douyin, ranked, one row per creator with the contact the creator publishes: email, website, a social profile that takes messages, or WeChat, QQ or Weibo. A free estimate shows the plan and the count before anything runs.",
+    "url": "https://apify.com/lexonia/lexonia-video-intel",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lexonia Group LLC",
+      "url": "https://lexoniagroup.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Business Finder",
+    "description": "The complete list of businesses of one kind in a city, region or country, each with Google’s own category, phone, website and rating, searched in the local language. Optional: the contact from each business’s website, a mailbox check, and reviews by period and star rating.",
+    "url": "https://apify.com/lexonia/business-finder",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lexonia Group LLC",
+      "url": "https://lexoniagroup.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Lexonia Search",
+    "description": "Search YouTube through its official Data API and get the numbers: videos by phrase sorted by views or date, channels on a topic ranked, every video of a channel or playlist, a country’s trending chart, live streams, and comments with likes and replies. Every row carries views, likes, date and length.",
+    "url": "https://apify.com/lexonia/youtube-search-api",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lexonia Group LLC",
+      "url": "https://lexoniagroup.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Contact Details Scraper",
+    "description": "Extracts the owner’s contact from websites, pasted bios and Bilibili or Douyin profiles: email, phone, WhatsApp, WeChat, Kakao, LINE, QQ and social profiles, each labelled by where it was found, with sponsor and agency addresses set apart.",
+    "url": "https://apify.com/lexonia/contact-finder",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lexonia Group LLC",
+      "url": "https://lexoniagroup.com"
+    }
+  }
+  </script>
+  <!-- Schema.org: FAQ, word for word as on the page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I get an English transcript of a Bilibili video, with timestamps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Paste the Bilibili link and ask for English; every line comes with its start and end time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the video has no captions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It transcribes the speech. A clip with only music is reported as having no words."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can it do a whole channel or playlist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, one row per video, and you see the list before it runs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not use YouTube’s own API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "YouTube’s API returns caption files only for videos your own account owns. Video Lens reads any public video, and Bilibili and Douyin have no public transcript API at all."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this different from an influencer database?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A database is filtered by the creator’s own topic. This starts from your audience and returns the creators your people watch, whatever those creators are about."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What counts as a contact?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An email, a website, a social profile that takes messages, or a WeChat, QQ or Weibo ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not use the YouTube or TikTok API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Neither gives a creator’s business email, and neither starts from an audience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Ask your AI assistant in a sentence, or fill in the form on Apify."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each app shows its cost before anything runs. Apify’s free plan is enough to try them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Results go to your own Apify storage. Our privacy policy covers the rest."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://lexoniagroup.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Apps for AI assistants",
+        "item": "https://lexoniagroup.com/apps"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV (no Apps link in the header by decision; the footer carries it) -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="images/logo.png" alt="Lexonia Group"  loading="lazy" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Book Free Call</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Apps for AI assistants</span>
+    <h1>Research apps for Claude, ChatGPT and AI agents</h1>
+    <p class="hero-sub">Lexonia builds apps on Apify that turn videos into text in any language, find the creators an audience watches, and list the businesses of any kind in any city. They run inside Claude, ChatGPT and other assistants.</p>
+    <p class="hero-note">The apps are published on the Apify Store, the marketplace AI assistants search.</p>
+    <div class="hero-actions">
+      <a href="#video-lens" class="btn-primary">See the apps</a>
+      <a href="#how-to-use" class="btn-secondary">How to connect your assistant</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="video-lens">
+  <div class="container">
+    <div class="app-block">
+      <div id="video-lens-video" class="video-slot"></div><!-- empty spot for a short screen video, if one is recorded later -->
+      <span class="eyebrow">Featured app</span>
+      <h2>Video Lens: Any video, in any language, as text you can read, search and quote.</h2>
+      <p class="app-lead">Paste a video link, a playlist, a channel or a few search words. Video Lens returns the transcript in the video’s own language, a translation into the language you name, a summary, and subtitle files, one row per video. When a video has no captions, it transcribes the speech itself.</p>
+      <p lang="zh" class="app-zh">Video Lens 可将 YouTube、哔哩哔哩、抖音、TikTok、Instagram 和 Facebook Reels 上的视频转成文字：原文转录、翻译成您指定的语言、摘要和字幕文件，每行带时间戳。没有字幕的视频会自动语音转写。</p>
+      <div class="app-cols">
+        <div>
+          <p class="app-label">What you get</p>
+          <ul class="deliverables">
+            <li>Sources: YouTube videos, Shorts, playlists, channels and search words; TikTok; Instagram and Facebook Reels; Bilibili; Douyin; Vimeo.</li>
+            <li>Outputs: the transcript; a translation into more than 30 languages; a summary in more than 20; SRT and VTT subtitles; a timestamp for every line.</li>
+            <li>Every YouTube row also carries the video’s views, likes, date and length.</li>
+            <li>It shows the list of videos and the cost before anything runs.</li>
+            <li>A video with music and no speech is reported as such and not charged.</li>
+          </ul>
+          <div class="app-links">
+            <a class="btn-primary" href="https://apify.com/lexonia/lexonia-video-scrape?utm_source=lexoniagroup&utm_medium=apps-page">Open Video Lens on Apify &rarr;</a>
+            <a class="btn-secondary" href="https://apify.com/lexonia/lexonia-video-scrape/examples?utm_source=lexoniagroup&utm_medium=apps-page">See example runs</a>
+          </div>
+          <p class="app-editions"><a href="https://apify.com/lexonia/video-lens-es?utm_source=lexoniagroup&utm_medium=apps-page">Spanish edition</a> &middot; <a href="https://apify.com/lexonia/video-lens-pt?utm_source=lexoniagroup&utm_medium=apps-page">Portuguese edition</a></p>
+        </div>
+        <div>
+          <p class="app-label">Who uses Video Lens, and what they got</p>
+          <div class="uc-grid">
+        <div class="uc-card"><p class="uc-who">A traveller planning a winter trip to Hokkaido</p><p class="uc-job"><span>The job:</span> A 19-minute Japanese travel guide they could not follow</p><p class="uc-got"><span>What they got:</span> The whole guide in English, with the Japanese transcript beside it</p></div>
+        <div class="uc-card"><p class="uc-who">A home cook who loves Italian food</p><p class="uc-job"><span>The job:</span> A Tuscan ragù video from an Italian creator</p><p class="uc-got"><span>What they got:</span> The Italian transcript, an English translation and English subtitles to watch along</p></div>
+        <div class="uc-card"><p class="uc-who">A product team watching the Chinese market</p><p class="uc-job"><span>The job:</span> Chinese creators’ reviews of a new phone on Bilibili and Douyin</p><p class="uc-got"><span>What they got:</span> An English summary of each review, with timestamps to jump to the key moments</p></div>
+        <div class="uc-card"><p class="uc-who">A student on an online course</p><p class="uc-job"><span>The job:</span> A conference playlist of 20 talks</p><p class="uc-got"><span>What they got:</span> Every talk transcribed in one run, one row each with views and date, plus one combined file</p></div>
+        <div class="uc-card"><p class="uc-who">A marketer collecting ideas</p><p class="uc-job"><span>The job:</span> A recipe Reel on Instagram and a news clip on Facebook</p><p class="uc-got"><span>What they got:</span> Both as text, translated into Spanish</p></div>
+        <div class="uc-card"><p class="uc-who">An analyst following a competitor</p><p class="uc-job"><span>The job:</span> A competitor’s channel, every Monday</p><p class="uc-got"><span>What they got:</span> The week’s new videos summarised, delivered to Google Sheets through an integration</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="app-faq">
+        <h3>Can I get an English transcript of a Bilibili video, with timestamps?</h3>
+        <p>Yes. Paste the Bilibili link and ask for English; every line comes with its start and end time.</p>
+        <h3>What if the video has no captions?</h3>
+        <p>It transcribes the speech. A clip with only music is reported as having no words.</p>
+        <h3>Can it do a whole channel or playlist?</h3>
+        <p>Yes, one row per video, and you see the list before it runs.</p>
+        <h3>Why not use YouTube’s own API?</h3>
+        <p>YouTube’s API returns caption files only for videos your own account owns. Video Lens reads any public video, and Bilibili and Douyin have no public transcript API at all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="audience-intel">
+  <div class="container">
+    <div class="app-block">
+      <div id="audience-intel-video" class="video-slot"></div><!-- empty spot for a short screen video, if one is recorded later -->
+      <span class="eyebrow">Featured app</span>
+      <h2>Audience Intel: Name the people you sell to. Get the creators they already watch, with a way to reach each one.</h2>
+      <p class="app-lead">Describe your audience in your own words. Audience Intel searches YouTube, TikTok, Bilibili and Douyin with the phrases that audience uses, finds the creators it keeps landing on, ranks them, and returns one row per creator with the contact that creator publishes. A free estimate shows the plan, the boundaries and the count before anything runs.</p>
+      <p lang="zh" class="app-zh">Audience Intel 根据您描述的目标受众，在 YouTube、TikTok、哔哩哔哩和抖音上找出这群人经常观看的创作者，按相关度排序，并给出每位创作者公开的联系方式，包括微信、QQ 或微博账号。运行前先显示免费预估。</p>
+      <div class="app-cols">
+        <div>
+          <p class="app-label">What you get</p>
+          <ul class="deliverables">
+            <li>Platforms: YouTube, TikTok, Bilibili, Douyin.</li>
+            <li>Contacts: email, website, a social profile that takes messages, and for Chinese creators WeChat, QQ or Weibo from the profile, or the profile page where they take bookings. Every contact says where it was found.</li>
+            <li>A creator with no way to reach them is not returned. Big channels with a single on-topic video are left out.</li>
+            <li>Measured: 19 of 20 TikTok creators returned come with an email.</li>
+            <li>Optional: a summary of each top creator’s latest videos, and a mailbox check on the emails.</li>
+          </ul>
+          <div class="app-links">
+            <a class="btn-primary" href="https://apify.com/lexonia/lexonia-video-intel?utm_source=lexoniagroup&utm_medium=apps-page">Open Audience Intel on Apify &rarr;</a>
+            <a class="btn-secondary" href="https://apify.com/lexonia/lexonia-video-intel/examples?utm_source=lexoniagroup&utm_medium=apps-page">See example runs</a>
+          </div>
+
+        </div>
+        <div>
+          <p class="app-label">Who uses Audience Intel, and what they got</p>
+          <div class="uc-grid">
+        <div class="uc-card"><p class="uc-who">A property firm in the UK</p><p class="uc-job"><span>The job:</span> The YouTube creators that people investing in Cyprus property follow</p><p class="uc-got"><span>What they got:</span> A ranked list of creators, five of them with a direct contact</p></div>
+        <div class="uc-card"><p class="uc-who">A robotics start-up</p><p class="uc-job"><span>The job:</span> Korean creators covering humanoid robots</p><p class="uc-got"><span>What they got:</span> Korean creators ranked, with their contacts, found from Claude in plain words</p></div>
+        <div class="uc-card"><p class="uc-who">A company hiring drivers</p><p class="uc-job"><span>The job:</span> The creators that truck drivers at a mine in northern Sweden watch, not general trucking news</p><p class="uc-got"><span>What they got:</span> Five creators that audience actually watches</p></div>
+        <div class="uc-card"><p class="uc-who">A brand entering China</p><p class="uc-job"><span>The job:</span> Bilibili and Douyin creators that Chinese electric-car buyers watch</p><p class="uc-got"><span>What they got:</span> KOLs with WeChat, QQ or profile contacts</p></div>
+        <div class="uc-card"><p class="uc-who">A US skincare brand</p><p class="uc-job"><span>The job:</span> The creators its shoppers watch, on YouTube and TikTok</p><p class="uc-got"><span>What they got:</span> Ranked creators with business emails</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="app-faq">
+        <h3>How is this different from an influencer database?</h3>
+        <p>A database is filtered by the creator’s own topic. This starts from your audience and returns the creators your people watch, whatever those creators are about.</p>
+        <h3>What counts as a contact?</h3>
+        <p>An email, a website, a social profile that takes messages, or a WeChat, QQ or Weibo ID.</p>
+        <h3>Why not use the YouTube or TikTok API?</h3>
+        <p>Neither gives a creator’s business email, and neither starts from an audience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE APPS -->
+<section class="section" id="more-apps">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">More Lexonia apps</span>
+      <h2>Business lists, YouTube numbers and owner contacts</h2>
+      <p>Three smaller apps for the jobs around the two above. Each shows its cost before it runs.</p>
+    </div>
+    <div class="apps-grid">
+      <div class="card app-card" id="business-finder">
+        <h2>Business Finder</h2>
+        <p class="app-promise">Every business of a kind in a city, a region or a country, with its phone and contact.</p>
+        <p>A Google Maps category and a place go in. Every matching business comes back with Google’s own category, phone, website and rating. It searches in the local language, so a search in Warsaw or Bangkok finds what an English search misses. Optional: the contact from the business’s own website, a mailbox check, and reviews by period and star rating, such as a year of one- and two-star complaints.</p>
+        <p class="app-label">Jobs it has run</p>
+        <ul class="deliverables">
+          <li>Farm stays around Siena, with phone, website and a year of complaints for the busiest ten</li>
+          <li>UK companies selling property investment in Cyprus</li>
+          <li>Electronics wholesalers in Hong Kong’s Sham Shui Po</li>
+        </ul>
+        <div class="app-links">
+          <a class="btn-primary" href="https://apify.com/lexonia/business-finder?utm_source=lexoniagroup&utm_medium=apps-page">Open Business Finder on Apify &rarr;</a>
+        </div>
+        <p class="app-editions"><a href="https://apify.com/lexonia/business-finder-es?utm_source=lexoniagroup&utm_medium=apps-page">Spanish edition</a> &middot; <a href="https://apify.com/lexonia/business-finder-pt?utm_source=lexoniagroup&utm_medium=apps-page">Portuguese edition</a></p>
+
+      </div>
+      <div class="card app-card" id="lexonia-search">
+        <h2>Lexonia Search <span class="suffix">for YouTube</span></h2>
+        <p class="app-promise">Search YouTube with the numbers: views, likes, dates and channels.</p>
+        <p>Built on YouTube’s official Data API. Videos by search phrase, sorted by views or date, with Shorts left out on request; the channels on a topic, ranked; every video of a channel or a playlist; a country’s trending chart by category; live streams; comments with likes and replies. Every row carries views, likes, date and length.</p>
+        <p class="app-label">Jobs it has run</p>
+        <ul class="deliverables">
+          <li>The 30 most-viewed US travel videos of the week, no Shorts</li>
+          <li>Italian road-trip videos published this month</li>
+          <li>The comments under the most-viewed reviews of a product</li>
+        </ul>
+        <div class="app-links">
+          <a class="btn-primary" href="https://apify.com/lexonia/youtube-search-api?utm_source=lexoniagroup&utm_medium=apps-page">Open Lexonia Search on Apify &rarr;</a>
+        </div>
+
+        <p class="app-legal">Lexonia Search for YouTube uses YouTube API Services. <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> &middot; <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+      </div>
+      <div class="card app-card" id="contact-details">
+        <h2>Contact Details Scraper</h2>
+        <p class="app-promise">The owner’s contact from a website or a bio, not the sponsor’s.</p>
+        <p>Websites, lists of sites, pasted bios, and Bilibili or Douyin profiles go in. Email, phone, WhatsApp, WeChat, Kakao, LINE, QQ and social profiles come out, each labelled by where it was found. The owner’s address comes first; sponsor and agency addresses are set apart. A site that publishes nothing says so and is not charged. Optional mailbox check.</p>
+        <p class="app-label">Jobs it has run</p>
+        <ul class="deliverables">
+          <li>The owner’s email for a list of supplier websites</li>
+          <li>A creator’s real contacts from their link-in-bio page</li>
+          <li>The WeChat or QQ ID in a Chinese creator’s bio</li>
+        </ul>
+        <div class="app-links">
+          <a class="btn-primary" href="https://apify.com/lexonia/contact-finder?utm_source=lexoniagroup&utm_medium=apps-page">Open Contact Details Scraper on Apify &rarr;</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="section section-alt" id="how-to-use">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How to use them</span>
+      <h2>How to run the apps: in your AI assistant, on Apify, or in n8n, Make or Zapier</h2>
+      <p>All three ways need a free Apify account. The most common comes first. Steps checked against the Claude and OpenAI help pages on October 21, 2026.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <h3>In Claude (recommended)</h3>
+        <ol>
+          <li>On claude.ai, open Customize &rarr; Connectors &rarr; Add &rarr; Add custom connector.</li>
+          <li>Enter the address <code>https://mcp.apify.com</code> and sign in to Apify once.</li>
+          <li>Ask in a sentence.</li>
+        </ol>
+        <p>Custom connectors are available on Claude Free, Pro, Max, Team and Enterprise; a free account can add one.</p>
+        <p class="example">&ldquo;Use the Lexonia Video Lens app on Apify to turn this Bilibili video into English with timestamps.&rdquo;</p>
+      </div>
+      <div class="how-card">
+        <h3>In ChatGPT</h3>
+        <p>Custom MCP server connections are available in ChatGPT Business, Enterprise and Edu workspaces. A workspace admin or owner adds one under Plugins &rarr; Add custom MCP server, with the address <code>https://mcp.apify.com</code>. Personal plans (Free, Plus, Pro) are not included. If you are on a personal plan, use Claude.</p>
+      </div>
+      <div class="how-card">
+        <h3>Without an assistant</h3>
+        <p>Open the app&rsquo;s page on Apify and fill in the form. Or use Apify&rsquo;s node in n8n, Make or Zapier to run an app on a schedule and send the results to Google Sheets, Slack or Notion.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;color:var(--sub);font-size:15px;">Cursor, and Qwen or DeepSeek through tools such as Cherry Studio, connect to Apify the same way. Apify&rsquo;s own page on the connector: <a href="https://mcp.apify.com" style="color:var(--navy);">mcp.apify.com</a>.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked questions about the apps</h2>
+    </div>
+    <div class="faq-list">
+      <h3>Do I need to code?</h3>
+      <p>No. Ask your AI assistant in a sentence, or fill in the form on Apify.</p>
+      <h3>What does it cost?</h3>
+      <p>Each app shows its cost before anything runs. Apify’s free plan is enough to try them.</p>
+      <h3>What happens to my data?</h3>
+      <p>Results go to your own Apify storage. <a href="privacy.html" style="color:var(--navy);">Our privacy policy</a> covers the rest.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT AND TRUST -->
+<section class="section section-alt trust" id="about">
+  <div class="container" style="text-align:center;">
+    <span class="eyebrow">Who makes these apps</span>
+    <h2>Lexonia Group</h2>
+    <p>Lexonia Group LLC, based in Eden Prairie, Minnesota, helps local service businesses in the US and Canada with social media marketing, lead generation and AI automation. The apps on this page are the research tools we built for that work, published on Apify so any AI assistant can use them.</p>
+    <p><a href="privacy.html">Privacy policy</a> &middot; <a href="terms.html">Terms of service</a> &middot; <a href="https://apify.com/lexonia?utm_source=lexoniagroup&utm_medium=apps-page">Lexonia on Apify</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Lexonia Group"  loading="lazy" />
+        <p>Connecting minds and ideas.<br/>Social media marketing and AI automation for local service businesses &mdash; across the US and Canada.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="apps.html">Apps</a>
+        <a href="contact.html">Book a Call</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:9528368405">&#x1F4DE; (952) 836-8405</a>
+        <a href="mailto:info@lexoniagroup.com">✉️ info@lexoniagroup.com</a>
+        <a href="https://www.instagram.com/lexoniagroup" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="flex-shrink:0"><defs><radialGradient id="igs" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> @lexoniagroup</a>
+        <a href="https://calendly.com/oleg-lychkovski-lexoniagroup/30min" target="_blank" rel="noopener noreferrer">&#x1F4C5; Schedule a Call</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Lexonia Group LLC. All rights reserved. &middot; Eden Prairie, MN &middot; <a href="privacy.html" style="color:rgba(255,255,255,.6);">Privacy Policy</a> &middot; <a href="terms.html" style="color:rgba(255,255,255,.6);">Terms of Service</a></span>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/profile.php?id=61583797644829" target="_blank" rel="noopener noreferrer" aria-label="Lexonia Group on Facebook" style="display:inline-flex;align-items:center;opacity:.9;transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" aria-label="Facebook"><path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a>
+        <a href="https://www.instagram.com/lexoniagroup" target="_blank" rel="noopener noreferrer" aria-label="Lexonia Group on Instagram" style="display:inline-flex;align-items:center;opacity:.9;transition:opacity .2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" aria-label="Instagram"><defs><radialGradient id="ig-g" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig-g)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+</svg></a>
+        <a href="https://www.linkedin.com/company/lexoniagroup" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display:inline-flex;align-items:center;opacity:.9;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
