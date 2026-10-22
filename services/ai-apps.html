@@ -35,6 +35,9 @@
     .tab-cards .card a.more { display: inline-block; margin-top: 12px; color: var(--navy); font-weight: 600; text-decoration: none; }
     .tool-main { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .bf-card { margin-top: 24px; }
+    .card-img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--rs); margin-bottom: 20px; }
+    .bf-card .card-img { aspect-ratio: 3 / 1; }
+    @media (max-width: 768px) { .bf-card .card-img { aspect-ratio: 3 / 2; } }
     .tool-card h2 { font-size: 24px; margin-bottom: 8px; }
     .tool-card .job { font-weight: 600; color: var(--text); margin-bottom: 12px; font-size: 16px; }
     .tool-card p { font-size: 15px; line-height: 1.7; color: var(--sub); margin-bottom: 10px; }
@@ -260,6 +263,7 @@
   <div class="container">
     <div class="tool-main">
       <div class="card tool-card" id="video-lens">
+        <img class="card-img" src="../images/app-video-lens.jpg" alt="A woman smiling beside a network of connected faces" width="1200" height="800" loading="lazy" />
         <h2>Video Lens</h2>
         <p class="job">Transcribe and translate videos from YouTube, TikTok, Reels, Bilibili, Douyin and Vimeo.</p>
         <p>Paste a video link from YouTube, TikTok, Instagram or Facebook Reels, Bilibili, Douyin or Vimeo, or a whole YouTube, Bilibili or Douyin channel. You get the transcript in its own language, a translation into any of 32 languages and a summary, plus subtitle files for YouTube, TikTok and Bilibili. No captions needed; it listens to the speech.</p>
@@ -272,6 +276,7 @@
         <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/lexonia-video-scrape?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Video Lens &rarr;</a><a class="small" href="https://apify.com/lexonia/lexonia-video-scrape/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
       </div>
       <div class="card tool-card" id="audience-intel">
+        <img class="card-img" src="../images/app-audience-intel.jpg" alt="A light bulb built from the letters of the word idea" width="1200" height="800" loading="lazy" />
         <h2>Audience Intel</h2>
         <p class="job">Find the creators your customers already watch, with a way to reach each one.</p>
         <p>Describe your audience in your own words. You get the creators those people watch on YouTube, TikTok, Bilibili and Douyin, ranked, each with the contact they publish. A free estimate shows the search plan and the price before anything runs.</p>
@@ -286,6 +291,7 @@
       </div>
     </div>
     <div class="card tool-card bf-card" id="business-finder">
+        <img class="card-img" src="../images/app-business-finder.jpg" alt="Two networks of connected blocks on black and yellow" width="1200" height="800" loading="lazy" />
         <h2>Business Finder</h2>
         <p class="job">Built for lead generation: the businesses of one kind in a city, a state or a region, with phone and contact.</p>
         <p>Searched in the local language too, so a search in Warsaw or Bangkok finds what an English search misses.</p>
