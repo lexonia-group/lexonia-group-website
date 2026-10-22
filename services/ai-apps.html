@@ -46,12 +46,18 @@
     .intro p { font-size: 17px; line-height: 1.75; color: var(--sub); margin-bottom: 16px; }
     .intro p strong { color: var(--text); }
     .china { margin-top: 24px; }
+    .uses-label { font-size: 13px !important; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted) !important; margin: 16px 0 8px !important; }
+    .uses { list-style: none; padding: 0; margin: 0; }
+    .uses li { font-size: 15px; line-height: 1.6; color: var(--sub); padding: 8px 0 8px 14px; border-left: 3px solid var(--blue-pale); margin-bottom: 6px; }
+    .uses li strong { color: var(--text); font-weight: 600; }
+    .china-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 8px 0 8px; }
+    .china-cols h3 { font-size: 17px; margin: 8px 0 6px; }
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
     .steps .card h3 { font-size: 17px; }
     .steps .card p { font-size: 15px; }
     .steps code { background: var(--gray-light); padding: 2px 6px; border-radius: 4px; font-size: 14px; }
     .faq-list { max-width: 760px; }
-    @media (max-width: 768px) { .tab-cards, .tool-main, .tool-small, .steps { grid-template-columns: 1fr !important; } }
+    @media (max-width: 768px) { .tab-cards, .tool-main, .tool-small, .steps, .china-cols { grid-template-columns: 1fr !important; } }
   </style>
   <!-- Facebook Pixel -->
   <script>
@@ -288,15 +294,25 @@
       <div class="card tool-card" id="video-lens">
         <h2>Video Lens</h2>
         <p class="job">Transcribe and translate any video.</p>
-        <p>Paste a link from YouTube, TikTok, Instagram or Facebook Reels, Bilibili, Douyin or Vimeo, or a whole channel or playlist. You get the transcript in its own language, a translation into yours, a summary and subtitle files, one row per video. No captions needed; it listens to the speech.</p>
-        <p><strong>Someone did this:</strong> a traveller planning a winter trip to Hokkaido turned a 19-minute Japanese travel guide into English, with the Japanese beside it.</p>
+        <p>Paste a link from YouTube, TikTok, Instagram or Facebook Reels, Bilibili, Douyin or Vimeo, or a whole channel or playlist. You get the transcript in its own language, a translation into yours, a summary and subtitle files. No captions needed; it listens to the speech.</p>
+        <p class="uses-label">What people have used it for</p>
+        <ul class="uses">
+          <li><strong>A traveller planning a winter trip to Hokkaido</strong> turned a 19-minute Japanese travel guide into English, with the Japanese beside it.</li>
+          <li><strong>A home cook who loves Italian food</strong> got a Tuscan ragù video as Italian text, an English translation and English subtitles to cook along.</li>
+          <li><strong>An analyst following a competitor</strong> gets that channel&rsquo;s new videos summarised every Monday, straight into Google Sheets.</li>
+        </ul>
         <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/lexonia-video-scrape?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Video Lens &rarr;</a><a class="small" href="https://apify.com/lexonia/lexonia-video-scrape/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
       </div>
       <div class="card tool-card" id="audience-intel">
         <h2>Audience Intel</h2>
         <p class="job">Find the creators your customers already watch, with a way to reach each one.</p>
         <p>Describe your audience in your own words. You get the creators those people watch on YouTube, TikTok, Bilibili and Douyin, ranked, each with the contact they publish. A free estimate shows the count before anything runs.</p>
-        <p><strong>Someone did this:</strong> a company hiring drivers asked for the creators that truck drivers at a mine in northern Sweden watch, not general trucking news, and got five that audience actually watches.</p>
+        <p class="uses-label">What people have used it for</p>
+        <ul class="uses">
+          <li><strong>A company hiring drivers</strong> asked for the creators truck drivers at a mine in northern Sweden watch, not general trucking news, and got five that audience actually watches.</li>
+          <li><strong>A robotics start-up</strong> asked Claude in plain words for Korean creators covering humanoid robots and got them ranked, with contacts.</li>
+          <li><strong>A property firm in the UK</strong> found the YouTube creators that people investing in Cyprus property follow, five of them with a direct contact.</li>
+        </ul>
         <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/lexonia-video-intel?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Audience Intel &rarr;</a><a class="small" href="https://apify.com/lexonia/lexonia-video-intel/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
       </div>
     </div>
@@ -305,27 +321,59 @@
         <h2>Business Finder</h2>
         <p class="job">Every business of a kind in a city, a region or a country, with its phone and contact.</p>
         <p>Searched in the local language, so Warsaw or Bangkok come back complete.</p>
-        <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/business-finder?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Business Finder &rarr;</a></div>
+        <p class="uses-label">What people have used it for</p>
+        <ul class="uses">
+          <li><strong>Farm stays around Siena,</strong> with phone and website, and a year of complaints for the busiest ten.</li>
+          <li><strong>Electronics wholesalers</strong> in Hong Kong&rsquo;s Sham Shui Po market.</li>
+          <li><strong>Every mini-market and haberdashery</strong> in a small town in north-east Brazil.</li>
+        </ul>
+        <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/business-finder?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Business Finder &rarr;</a><a class="small" href="https://apify.com/lexonia/business-finder/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
       </div>
       <div class="card tool-card" id="lexonia-search">
         <h2>Lexonia Search <span style="font-size:15px;font-weight:500;color:var(--sub);">for YouTube</span></h2>
         <p class="job">YouTube results with the numbers: views, likes, dates and channels.</p>
         <p>Built on YouTube&rsquo;s official Data API. Videos by phrase, channels on a topic, a country&rsquo;s trending chart, comments.</p>
-        <div class="links"><a class="small" href="https://apify.com/lexonia/youtube-search-api?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open on Apify &rarr;</a></div>
+        <p class="uses-label">What people have used it for</p>
+        <ul class="uses">
+          <li><strong>The 30 most-viewed</strong> US travel videos of the week, Shorts left out.</li>
+          <li><strong>Brazil&rsquo;s trending music chart,</strong> today.</li>
+          <li><strong>The comments</strong> under the most-viewed reviews of a product.</li>
+        </ul>
+        <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/youtube-search-api?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Lexonia Search &rarr;</a><a class="small" href="https://apify.com/lexonia/youtube-search-api/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
         <p class="legal">Uses YouTube API Services. <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> &middot; <a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
       </div>
       <div class="card tool-card" id="contact-details">
         <h2>Contact Details Scraper</h2>
         <p class="job">The owner&rsquo;s contact from a website or a bio, not the sponsor&rsquo;s.</p>
         <p>Email, phone, WhatsApp, WeChat and social profiles, each labelled by where it was found.</p>
-        <div class="links"><a class="small" href="https://apify.com/lexonia/contact-finder?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open on Apify &rarr;</a></div>
+        <p class="uses-label">What people have used it for</p>
+        <ul class="uses">
+          <li><strong>The owner&rsquo;s email</strong> for a whole list of supplier websites.</li>
+          <li><strong>A creator&rsquo;s real contacts</strong> from their link-in-bio page.</li>
+          <li><strong>The WeChat or QQ ID</strong> in a Chinese creator&rsquo;s bio.</li>
+        </ul>
+        <div class="links"><a class="btn-primary" href="https://apify.com/lexonia/contact-finder?utm_source=lexoniagroup&utm_medium=ai-apps-page">Open Contact Details Scraper &rarr;</a><a class="small" href="https://apify.com/lexonia/contact-finder/examples?utm_source=lexoniagroup&utm_medium=ai-apps-page">Example runs</a></div>
       </div>
     </div>
     <div class="card tool-card china" id="reaching-china">
       <h2>Reaching China</h2>
-      <p class="job">Most Western tools stop at YouTube. Three of our apps read Bilibili and Douyin.</p>
-      <p>Bilibili and Douyin have no public transcript API, so what people in China watch and say stays out of reach for most of the world. Video Lens transcribes and translates a Bilibili or Douyin video. Audience Intel finds the creators Chinese buyers watch, with the WeChat, QQ or Weibo contact each one publishes. Contact Details Scraper reads a Bilibili or Douyin profile for its contacts.</p>
-      <p><strong>Someone did this:</strong> a product team watching the Chinese market got an English summary of creators&rsquo; reviews of a new phone on Bilibili and Douyin, with timestamps to jump to the key moments.</p>
+      <p class="job">China has its own YouTube. Our apps open it up, in both directions.</p>
+      <div class="china-cols">
+        <div>
+          <h3>A whole world of video you never see</h3>
+          <p>Bilibili is China&rsquo;s big video platform, and Douyin is the Chinese TikTok. Reviews, tutorials, travel, music, games, what people are buying and talking about: a whole culture lives there, in Chinese. Most Western tools stop at YouTube, and Bilibili and Douyin offer no public way to pull a transcript.</p>
+        </div>
+        <div>
+          <h3>And they do not see ours</h3>
+          <p>YouTube has been blocked in mainland China since 2009, and TikTok is not available there either. So for most people in China, the videos we watch are out of reach. If you want Chinese customers to find you, you go where they already watch.</p>
+        </div>
+      </div>
+      <p><strong>How our apps help.</strong> Video Lens transcribes and translates Bilibili and Douyin videos. Audience Intel finds the creators Chinese buyers watch, with the WeChat, QQ or Weibo contact each one publishes. Contact Details Scraper reads a Bilibili or Douyin profile for its contacts.</p>
+      <p class="uses-label">What people have used it for</p>
+      <ul class="uses">
+          <li><strong>A product team watching the Chinese market</strong> got an English summary of creators&rsquo; reviews of a new phone on Bilibili and Douyin, with timestamps to the key moments.</li>
+          <li><strong>A brand entering China</strong> found the Bilibili and Douyin creators that Chinese electric-car buyers watch, with WeChat, QQ or profile contacts.</li>
+        </ul>
     </div>
   </div>
 </section>
