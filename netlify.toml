@@ -40,13 +40,18 @@
   status = 200
 
 [[redirects]]
+  from = "/services/tools"
+  to = "/services/ai-apps"
+  status = 301
+
+[[redirects]]
   from = "/services/:slug"
   to = "/services/:slug.html"
   status = 200
 
 [[redirects]]
   from = "/apps"
-  to = "/services/tools"
+  to = "/services/ai-apps"
   status = 301
 
 [[redirects]]
