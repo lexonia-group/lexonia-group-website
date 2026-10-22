@@ -11,7 +11,7 @@ This file lists the pages that describe the business. It follows the site as pub
 - [Social Media](https://lexoniagroup.com/services/social-media): managed for you or automated from your own material; every post checked and approved by you; Facebook, Instagram, LinkedIn.
 - [Lead Generation](https://lexoniagroup.com/services/lead-generation): Meta campaigns on your positioning with form, booking and follow-up; listeners that send public “can anyone recommend” questions to your phone.
 - [AI Automation](https://lexoniagroup.com/services/ai-automation): an assistant that does one job in your voice inside your rules; lead routing, booking, follow-up, reporting; never touches money.
-- [AI Apps](https://lexoniagroup.com/services/ai-apps): apps we build on the Apify marketplace for Claude, ChatGPT and AI agents: Video Lens (transcribe and translate any video: YouTube, TikTok, Reels, Bilibili, Douyin, Vimeo), Audience Intel (the creators an audience watches, with contacts), Business Finder, Lexonia Search for YouTube, Contact Details Scraper.
+- [AI Apps](https://lexoniagroup.com/services/ai-apps): apps we build on the Apify marketplace for Claude, ChatGPT and AI agents: Video Lens (transcribe and translate videos from YouTube, TikTok, Instagram and Facebook Reels, Bilibili, Douyin, Vimeo), Audience Intel (the creators an audience watches, with contacts), Business Finder, Lexonia Search for YouTube, Contact Details Scraper.
 
 ## Blog
 - [Why Does a Small Business’s Social Media Go Quiet When the Owner Gets Busy?](https://lexoniagroup.com/blog/social-media-goes-quiet): Because every post, reply and follow-up waits for one person. What can move to a system you approve from your phone, what should stay with the owner, and a five-minute checklist to start.
