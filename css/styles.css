@@ -758,12 +758,14 @@ footer {
 .service-nav {
   position: sticky;
   top: 76px;
+  margin-top: 76px; /* sits right under the fixed main nav */
   z-index: 50;
   background: var(--white);
   border-bottom: 1px solid var(--border);
   padding: 0;
   backdrop-filter: blur(12px);
 }
+.service-nav + .page-hero { padding-top: 64px; } /* the tab bar already clears the fixed nav */
 .service-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
